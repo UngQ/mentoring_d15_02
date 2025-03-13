@@ -1,0 +1,23 @@
+<mvc:View controllerName="mentoringd1502.mentoringd1502.controller.List"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <List id = "employeeList"
+    headerText="{i18n>listTitle}"
+    class="sapUiResponsiveMargin"
+    width="80%"
+    items="{data>/ZEMPLOYEE_D15Set}"
+    itemPress="onOpenDialog">
+
+    <items>
+      <ObjectListItem id="listItem"
+        type="Active"
+        title="{data>Cname}"
+        number="{data>Cposition}"
+        numberUnit="{data>Cdepartment}">
+
+      </ObjectListItem>
+    </items>
+
+  </List>
+</mvc:View>
