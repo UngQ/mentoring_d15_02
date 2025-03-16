@@ -27,7 +27,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], (Controller) => {
     },
 
     onCloseDialog() {
-      this.byId("pop").close();
+      this.oDialog.close();
     },
   });
 });
